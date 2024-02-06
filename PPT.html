@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="PPT.css">
+    <title>Piedra, Papel, Tijeras</title>
+</head>
+<body>
+    <header>
+        <h1>Piedra Papel o Tijeras</h1>
+        <p class="mini">Minijuego</p>
+    </header>
+    <main>
+        <p class="intrucciones" id="intrucciones">
+            El primero en llegar a 6 puntos gana
+        </p>
+        <div class="marcador">
+            <p class="nombre nombre-jugador">Jugador</p>
+            <p class="nombre nombre-computadora">Computadora</p>
+            <p class="puntos">
+                <span id="puntos-usuario">0</span>
+                <span>-</span>
+                <span id="puntos-computadora">0</span>
+            </p>
+        </div>
+        <div class="arma" id="elegi-tu-arma">
+            <p>Elegí tu arma para el próximo turno</p>
+            <div class="arma">
+                <div class="arriba">
+                    <button class="piedra" id="✊🏽 Piedra">
+                      ✊🏽
+                    </button>
+                    <button class="papel" id="✋🏽 Papel">
+                      ✋🏽
+                    </button>
+                  </div>
+                  <div class="abajo">
+                    <button class="tijera" id="✌🏽 Tijera">
+                      ✌🏽
+                    </button>
+                  </div>
+            </div>
+        </div>
+        <div id="mensajes" class="disabled">
+            <p>
+                Elegiste <span class="eleccion" id="eleccion-usuario">✋🏽</span><br>
+                Y la Computadora usó <span class="eleccion" id="eleccion-computadora">✊🏽</span>
+            </p>
+            <p class="gana-punto" id="gana-puntos">Ganaste un punto!</p>
+        </div>
+        <button class="btn disabled" id="reiniciar">Reiniciar juego</button>
+    </main>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
